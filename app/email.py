@@ -21,6 +21,7 @@ def send_email(to, subject, template, **kwargs):
     return thr
 
 def send_simple_message(to, subject, newUser):
+    app = current_app._get_current_object()
     print('Enviando mensagem (POST)...', flush=True)
     print('URL: ' + str(app.config['API_URL']), flush=True)
     print('api: ' + str(app.config['API_KEY']), flush=True)
