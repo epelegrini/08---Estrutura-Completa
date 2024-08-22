@@ -14,7 +14,7 @@ class Config:
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    # Configurações para o SendGrid
+    # não consegui pegar a API pois o sendgrid não deixa mais eu entrar na minha conta nem criar uma nova, igualmente com o mailgun
     SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
     MAIL_FROM = os.environ.get('MAIL_FROM', 'flaskaulasweb@zohomail.com')
     ADMIN_EMAILS = ['flaskaulasweb@zohomail.com', 'e.pelegrini@aluno.ifsp.edu.br']
