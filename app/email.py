@@ -7,7 +7,7 @@ def send_email(subject, recipient, body):
     if not api_key:
         raise ValueError("SENDGRID_API_KEY not found in environment variables")
     sg = SendGridAPIClient(api_key)
-    from_email = 'flaskaulas@zohomail.com'  # Ou outro e-mail que você deseja usar
+    from_email = 'flaskaulas@zohomail.com' 
     message = Mail(
         from_email=from_email,
         to_emails=recipient,
